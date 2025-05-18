@@ -18,6 +18,8 @@ LABEL version="1.1"
 LABEL description="Dockerfile for building and running the Isaac Lab framework inside Isaac Sim container image."
 
 # Arguments
+ARG ACCEPT_EULA=Y
+ENV ACCEPT_EULA=${ACCEPT_EULA}
 # Path to Isaac Sim root folder
 ENV ISAACSIM_ROOT_PATH=/isaac-sim
 WORKDIR ${ISAACSIM_ROOT_PATH}
