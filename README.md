@@ -23,3 +23,8 @@ Run isaaclab extension tutorial
 python -m pip install -e source/ext_template
 python scripts/rsl_rl/train.py --task=Template-Isaac-Velocity-Rough-Anymal-D-v0 --headless --video
 ```
+
+## Eval
+```bash
+./isaaclab.sh -p scripts/reinforcement_learning/skrl/play.py --task Isaac-Velocity-Rough-Unitree-Go2-v0 --num_envs 64 --headless --video --checkpoiont PATH
+```
